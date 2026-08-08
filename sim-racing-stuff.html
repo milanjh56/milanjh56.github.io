@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DIY Sim Racing Shifter & Handbrake | Milan Hancock</title>
+  <meta
+    name="description"
+    content="A custom USB sim racing shifter and handbrake project by Milan Hancock."
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">Milan Hancock</a>
+      <div class="nav-links">
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom: 34px;">
+      <p class="eyebrow">EMBEDDED SYSTEMS · FABRICATION</p>
+      <h1>DIY Sim Racing Shifter &amp; Handbrake</h1>
+      <p class="hero-text">
+        A custom USB sequential shifter and analog handbrake built around a single
+        Arduino Pro Micro, combining 3D printing, mechanical design, calibration,
+        and C++ firmware.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button primary" href="projects.html">Back to projects</a>
+        <a class="button secondary" href="resume.html">Resume</a>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div>
+        <h2>Overview</h2>
+        <p>
+          This project was built to create a more immersive sim racing setup with
+          a custom sequential shifter and a handbrake that behaves like a full
+          analog control.
+        </p>
+      </div>
+
+      <div>
+        <h2>Role</h2>
+        <p>
+          I handled the mechanical design, fabrication, sensor integration,
+          firmware development, and calibration workflow for the build.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>What I built</h2>
+        <p>A single embedded platform controlling two different inputs.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <p class="project-tag">Input device</p>
+          <h3>Sequential shifter</h3>
+          <p>
+            A desk-mounted 3D-printed shifter using microswitches to create a
+            tactile sequential feel over USB.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <p class="project-tag">Analog control</p>
+          <h3>Handbrake assembly</h3>
+          <p>
+            A handbrake built from scrap wood, custom linkages, pivots, and a
+            repurposed thumb joystick module to produce a usable analog axis.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div>
+        <h2>Technical details</h2>
+        <p>
+          The project uses an Arduino Pro Micro (ATmega32U4) as the USB interface.
+          Microswitch inputs handle the shifter, while the handbrake reads an
+          analog joystick signal and converts partial travel into a full-range axis.
+        </p>
+      </div>
+
+      <div>
+        <h2>Tools and technologies</h2>
+        <p>
+          Arduino IDE, C++, 3D printing, basic woodworking, mechanical linkage
+          design, microswitches, analog sensors, and calibration.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Process</h2>
+        <p>How the build came together.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <p class="project-tag">1. Design</p>
+          <h3>Plan the mechanisms</h3>
+          <p>
+            I designed the shifter housing and the handbrake linkage so each
+            input had a distinct mechanical feel and reliable travel.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <p class="project-tag">2. Fabrication</p>
+          <h3>Build the hardware</h3>
+          <p>
+            I 3D-printed the shifter enclosure and assembled the handbrake using
+            scrap wood, pivots, and adjustable linkage pieces.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <p class="project-tag">3. Integration</p>
+          <h3>Wire and calibrate sensors</h3>
+          <p>
+            I integrated microswitches and a thumb joystick module, then tuned the
+            software mapping so the analog handbrake behaved consistently.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <p class="project-tag">4. Firmware</p>
+          <h3>Program the USB device</h3>
+          <p>
+            I wrote Arduino firmware in C++ to read the inputs and present the
+            hardware as a custom controller to the computer.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div>
+        <h2>Challenges</h2>
+        <p>
+          The biggest challenge was getting analog travel, linkage motion, and
+          software calibration to work together cleanly enough for a game controller.
+        </p>
+      </div>
+
+      <div>
+        <h2>Outcome</h2>
+        <p>
+          The result is a custom sim-racing controller that combines tactile
+          feedback, physical fabrication, and embedded programming into one build.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Gallery</h2>
+        <p>Add your photos here later.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Shifter photo</h3>
+          <p>Insert a hero image of the finished shifter.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Handbrake photo</h3>
+          <p>Insert a close-up of the handbrake assembly and linkage.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>CAD render</h3>
+          <p>Insert a rendering or sketch of the shifter design.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Firmware or wiring</h3>
+          <p>Insert a simple wiring diagram, breadboard view, or code screenshot.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Milan Hancock</p>
+  </footer>
+</body>
+</html>
