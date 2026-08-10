@@ -1,1 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real-Time Driving Event Classification with BeamNG.tech | Milan Hancock</title>
+  <meta
+    name="description"
+    content="Developing a real-time machine learning system that classifies driving events such as hard braking, rapid acceleration, and turning using simulated accelerometer and gyroscope data from BeamNG.tech."
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">Milan Hancock</a>
+
+      <div class="nav-links">
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-bottom: 34px;">
+      <p class="eyebrow">MACHINE LEARNING · AUTOMOTIVE SENSING</p>
+
+      <h1>Real-Time Driving Event Classification with BeamNG.tech</h1>
+
+      <p class="hero-text">
+        A real-time machine learning project that uses simulated accelerometer
+        and gyroscope data from BeamNG.tech to classify driving events such as
+        hard braking, rapid acceleration, smooth driving, and turning.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button primary" href="projects.html">Back to projects</a>
+        <a class="button secondary" href="resume.html">Resume</a>
+      </div>
+    </section>
+    
+<section class="section split-section">
+  <div>
+    <h2>Overview</h2>
+    <p>
+      This project explores whether lightweight machine learning models can
+      classify driving events using only accelerometer and gyroscope data from
+      a simulated vehicle in BeamNG.tech.
+    </p>
+  </div>
+
+  <div>
+    <h2>Role</h2>
+    <p>
+      I developed the simulation setup, IMU data collection pipeline, dataset
+      structure, feature extraction workflow, and machine learning approach for
+      real-time driving event classification.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <h2>What I built</h2>
+    <p>A simulation-to-machine-learning pipeline for vehicle motion sensing.</p>
+  </div>
+
+  <div class="project-grid">
+    <article class="project-card">
+      <p class="project-tag">Data collection</p>
+      <h3>IMU logging system</h3>
+      <p>
+        A Python logger using BeamNGpy and the Advanced IMU sensor to continuously
+        collect high-frequency acceleration and angular velocity data from a
+        simulated vehicle.
+      </p>
+    </article>
+
+    <article class="project-card">
+      <p class="project-tag">Machine learning</p>
+      <h3>Driving event classifier</h3>
+      <p>
+        A time-series classification pipeline designed to identify events such
+        as smooth driving, hard braking, rapid acceleration, and turning from
+        rolling windows of IMU data.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="section split-section">
+  <div>
+    <h2>Technical details</h2>
+    <p>
+      The system uses BeamNG.tech with BeamNGpy to stream accelerometer and
+      gyroscope measurements from an Advanced IMU placed near the vehicle's
+      center console. Data is sampled at approximately 100 Hz, stored in CSV
+      files, segmented into rolling windows, and converted into statistical
+      features for classification with a Random Forest model.
+    </p>
+  </div>
+
+  <div>
+    <h2>Tools and technologies</h2>
+    <p>
+      Python, BeamNG.tech, BeamNGpy, Advanced IMU sensors, pandas, NumPy,
+      scikit-learn, time-series processing, feature extraction, and real-time
+      telemetry.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <h2>Process</h2>
+    <p>How the sensing and machine learning pipeline was developed.</p>
+  </div>
+
+  <div class="project-grid">
+    <article class="project-card">
+      <p class="project-tag">1. Simulation</p>
+      <h3>Configure the vehicle and sensor</h3>
+      <p>
+        I configured a BeamNG.tech vehicle and positioned the simulated IMU near
+        the center console to approximate where a smartphone would be mounted
+        during real-world testing.
+      </p>
+    </article>
+
+    <article class="project-card">
+      <p class="project-tag">2. Data collection</p>
+      <h3>Stream and log IMU data</h3>
+      <p>
+        I built a Python logging system that continuously records raw and
+        smoothed three-axis acceleration and angular velocity measurements to
+        structured CSV files.
+      </p>
+    </article>
+
+    <article class="project-card">
+      <p class="project-tag">3. Processing</p>
+      <h3>Create time-series features</h3>
+      <p>
+        I segment the sensor stream into overlapping rolling windows and extract
+        statistical features that summarize vehicle motion over short periods
+        of time.
+      </p>
+    </article>
+
+    <article class="project-card">
+      <p class="project-tag">4. Classification</p>
+      <h3>Train a lightweight model</h3>
+      <p>
+        I use a Random Forest classifier as the initial model to distinguish
+        between driving events while keeping the system lightweight enough for
+        future real-time inference.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="section split-section">
+  <div>
+    <h2>Challenges</h2>
+    <p>
+      The main challenges include maintaining consistent sensor orientation,
+      choosing useful time-window features, preventing data leakage between
+      training and testing sessions, and making simulated IMU measurements
+      comparable to real smartphone sensor data.
+    </p>
+  </div>
+
+  <div>
+    <h2>Outcome</h2>
+    <p>
+      The project has produced a working BeamNG.tech IMU logging pipeline and a
+      foundation for training and evaluating real-time driving event classifiers.
+      Future work will compare the simulated data with smartphone measurements
+      collected using phyphox and expand the system to detect rough roads and
+      potholes.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <h2>Gallery</h2>
+    <p>Visuals showing the simulation, sensor data, and machine learning workflow.</p>
+  </div>
+
+  <div class="project-grid">
+    <article class="project-card">
+      <h3>BeamNG.tech simulation</h3>
+      <p>
+        Add a screenshot of the simulated vehicle and driving environment.
+      </p>
+    </article>
+
+    <article class="project-card">
+      <h3>IMU sensor placement</h3>
+      <p>
+        Add a screenshot showing the Advanced IMU positioned near the vehicle's
+        center console.
+      </p>
+    </article>
+
+    <article class="project-card">
+      <h3>Sensor data</h3>
+      <p>
+        Add a graph showing accelerometer and gyroscope signals during events
+        such as braking or turning.
+      </p>
+    </article>
+
+    <article class="project-card">
+      <h3>Machine learning results</h3>
+      <p>
+        Add a confusion matrix, feature importance plot, or live classification
+        output once the model is trained.
+      </p>
+    </article>
+  </div>
+</section>
