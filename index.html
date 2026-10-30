@@ -1,93 +1,191 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Milan Hancock | Intelligent Systems Engineering</title>
-  <meta
-    name="description"
-    content="Milan Hancock's engineering portfolio featuring embedded systems, machine learning, robotics, and physical computing projects."
-  />
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Milan Hancock | Engineering Portfolio</title>
+
+    <meta name="description"
+          content="Engineering portfolio of Milan Hancock, an Intelligent Systems Engineering student at Indiana University Bloomington.">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a class="logo" href="index.html">Milan Hancock</a>
-      <div class="nav-links">
-        <a href="projects.html">Projects</a>
-        <a href="experience.html">Experience</a>
-        <a href="about.html">About</a>
-        <a href="resume.html">Resume</a>
-      </div>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <p class="eyebrow">INTELLIGENT SYSTEMS ENGINEERING</p>
-      <h1>Building embedded, intelligent, and physical systems.</h1>
-      <p class="hero-text">
-        I am an Indiana University student focused on robotics, machine learning,
-        embedded hardware, and hands-on engineering design.
-      </p>
+    <!-- navigation -->
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="site-name" href="index.html">Milan Hancock</a>
 
-      <div class="hero-actions">
-        <a class="button primary" href="projects.html">View Projects</a>
-        <a class="button secondary" href="resume.html">Resume</a>
-      </div>
-    </section>
+            <div class="nav-links">
+                <a href="index.html" class="active" aria-current="page">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="experience.html">Experience</a>
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+            </div>
+        </nav>
+    </header>
 
-    <section class="section">
-      <div class="section-heading">
-        <h2>Featured Projects</h2>
-        <p>Selected work that shows how I design, build, test, and iterate.</p>
-      </div>
+    <main class="container">
 
-      <div class="project-grid">
-        <article class="project-card">
-          <p class="project-tag">Machine Learning · Simulation</p>
-          <h3>Real-Time Driving Event Classification</h3>
-          <p>
-            Developing a real-time machine learning pipeline using BeamNG.tech
-            and simulated IMU data to classify driving events.
-          </p>
-          <a href="projects.html">Read more</a>
-        </article>
+        <!-- intro -->
+        <section class="intro-section">
+            <h1>Milan J. Hancock</h1>
 
-        <article class="project-card">
-          <p class="project-tag">Embedded Systems · Fabrication</p>
-          <h3>DIY Sim Racing Shifter &amp; Handbrake</h3>
-          <p>
-            Custom USB sim-racing hardware combining Arduino firmware, sensor
-            calibration, mechanical design, and 3D printing.
-          </p>
-          <a href="projects.html">Read more</a>
-        </article>
-      </div>
-    </section>
+            <p class="subtitle">
+                B.S. Intelligent Systems Engineering |
+                Indiana University Bloomington
+            </p>
 
-    <section class="section split-section">
-      <div>
-        <h2>Core strengths</h2>
-        <p>
-          C/C++, Python, SystemVerilog, TensorFlow, scikit-learn, Arduino,
-          Raspberry Pi, Fusion 360, Onshape, LTSpice, Linux, Git.
-        </p>
-      </div>
+            <p>
+                I am an undergraduate engineering student interested in
+                embedded systems, computer engineering, machine learning,
+                and hardware-software integration. I enjoy working on
+                projects that combine programming, electronics, and
+                physical design.
+            </p>
 
-      <div>
-        <h2>What I like building</h2>
-        <p>
-          Projects that connect software to hardware, combine sensing and control,
-          and solve real problems through prototypes and iteration.
-        </p>
-      </div>
-    </section>
-  </main>
+            <div class="quick-links">
+                <a href="https://github.com/milanjh56"
+                   target="_blank" rel="noopener noreferrer">GitHub</a>
 
-  <footer class="site-footer">
-    <p>© 2026 Milan Hancock</p>
-  </footer>
+                <a href="https://www.linkedin.com/in/milan-hancock/"
+                   target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+                <a href="resume.html">Resume</a>
+
+                <a href="mailto:milhanco@iu.edu">Email</a>
+            </div>
+        </section>
+
+        <!-- featured projects -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <a class="section-link" href="projects.html">All projects &rarr;</a>
+            </div>
+
+            <div class="project-list">
+
+                <article class="project-entry">
+                    <h3>
+                        <a href="beamng-project.html">
+                            Real-Time Driving Event Classification
+                        </a>
+                    </h3>
+
+                    <p class="project-meta">
+                        Python | Machine Learning | BeamNG.tech
+                        <span class="status">In Progress</span>
+                    </p>
+
+                    <p>
+                        Developing a real-time machine learning pipeline
+                        to classify driving events using simulated
+                        accelerometer and gyroscope data. The system
+                        integrates automated data collection, model
+                        training, and sliding-window inference.
+                    </p>
+
+                    <a class="text-link" href="beamng-project.html">
+                        Project details &rarr;
+                    </a>
+                </article>
+
+                <article class="project-entry">
+                    <h3>
+                        <a href="sim-racing-shifter.html">
+                            DIY Sim Racing Shifter and Handbrake
+                        </a>
+                    </h3>
+
+                    <p class="project-meta">
+                        Arduino | C++ | Embedded Systems | 3D Printing
+                    </p>
+
+                    <p>
+                        Designed and built a custom USB sequential shifter
+                        and analog handbrake using a shared Arduino Pro
+                        Micro. The project involved mechanical fabrication,
+                        microswitch integration, analog sensor calibration,
+                        and custom firmware.
+                    </p>
+
+                    <a class="text-link" href="sim-racing-shifter.html">
+                        Project details &rarr;
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- skills -->
+        <section class="content-section">
+            <h2>Technical Skills</h2>
+
+            <div class="skills-list">
+                <div class="skill-row">
+                    <span class="skill-label">Programming</span>
+                    <span>C/C++, Python, SystemVerilog</span>
+                </div>
+
+                <div class="skill-row">
+                    <span class="skill-label">Machine Learning</span>
+                    <span>scikit-learn, TensorFlow, Google Colab</span>
+                </div>
+
+                <div class="skill-row">
+                    <span class="skill-label">Hardware & Embedded</span>
+                    <span>Arduino, Raspberry Pi, Soldering</span>
+                </div>
+
+                <div class="skill-row">
+                    <span class="skill-label">Design & Simulation</span>
+                    <span>Fusion 360, Onshape, LTspice</span>
+                </div>
+
+                <div class="skill-row">
+                    <span class="skill-label">Development Tools</span>
+                    <span>Linux, Git, CLI, JetStream2 VM</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- education -->
+        <section class="content-section">
+            <h2>Education</h2>
+
+            <div class="education-entry">
+                <div class="entry-heading">
+                    <strong>Indiana University Bloomington</strong>
+                    <span>Expected May 2028</span>
+                </div>
+
+                <p>B.S. Intelligent Systems Engineering</p>
+                <p class="muted">
+                    GPA: 4.00/4.00 | Dean's List: Fall 2024 - Spring 2026
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <span>&copy; 2026 Milan Hancock</span>
+
+            <div class="footer-links">
+                <a href="mailto:milhanco@iu.edu">Email</a>
+                <a href="https://github.com/milanjh56">GitHub</a>
+                <a href="https://www.linkedin.com/in/milan-hancock/">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
