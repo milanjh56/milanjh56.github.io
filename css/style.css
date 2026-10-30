@@ -354,3 +354,59 @@ h3 {
     height: 75vh;
   }
 }
+
+/* Overall layout */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 24px;
+}
+
+/* Page headings */
+h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    max-width: none;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 1.35rem;
+    margin-bottom: 14px;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+/*potential changes to simplify layout*/
+/*compact sections*/
+.hero {
+    min-height: auto;
+    max-width: none;
+    padding: 35px 0 30px;
+}
+
+.section {
+    padding: 20px 0 35px;
+}
+
+/*less prominent project cards*/
+.project-card {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+/*smaller introductory text*/
+.hero-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 750px;
+}
+
+/*compact navigation*/
+.nav {
+    padding: 15px 24px;
+}
